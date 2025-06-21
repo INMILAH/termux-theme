@@ -220,8 +220,7 @@ function change_animation_speed() {
     echo "║        ANIMATION SPEED CONFIG          ║"
     echo "╚════════════════════════════════════════╝"
     echo -e "\e[0m"
-    
-    echo -e "Current speed: $ANIMATION_SPEED (1-20, higher is slower)"
+
     read -p "Enter new speed: " speed
     
     if [[ $speed =~ ^[0-9]+$ ]] && [ $speed -ge 1 ] && [ $speed -le 20 ]; then
